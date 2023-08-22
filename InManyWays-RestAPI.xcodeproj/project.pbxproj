@@ -24,6 +24,7 @@
 		F1CFBF5B2A8CC02F008A185C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFBF5A2A8CC02F008A185C /* News.swift */; };
 		F1CFBF5D2A8CC18A008A185C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFBF5C2A8CC18A008A185C /* WebService.swift */; };
 		F1DC07DC2A93A416003C2BAF /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DC07DB2A93A416003C2BAF /* NewsCell.swift */; };
+		F1E068592A94E535001B6393 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E068582A94E535001B6393 /* CALayer.swift */; };
 		F1F030DC2A8B60CF00C8EAA2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F030DB2A8B60CF00C8EAA2 /* ViewModel.swift */; };
 		F1F030E42A8B616200C8EAA2 /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F030E32A8B616200C8EAA2 /* UIResponder.swift */; };
 		F1F030E62A8B617500C8EAA2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F030E52A8B617500C8EAA2 /* UIColor.swift */; };
@@ -79,6 +80,7 @@
 		F1CFBF5A2A8CC02F008A185C /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		F1CFBF5C2A8CC18A008A185C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		F1DC07DB2A93A416003C2BAF /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		F1E068582A94E535001B6393 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		F1F030DB2A8B60CF00C8EAA2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		F1F030E32A8B616200C8EAA2 /* UIResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder.swift; sourceTree = "<group>"; };
 		F1F030E52A8B617500C8EAA2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			children = (
 				F1F030E32A8B616200C8EAA2 /* UIResponder.swift */,
 				F1F030E52A8B617500C8EAA2 /* UIColor.swift */,
+				F1E068582A94E535001B6393 /* CALayer.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				F1CFBF592A8CBF29008A185C /* Server.swift in Sources */,
 				F1C6FF532A9245AC0044ADB2 /* NewsService.swift in Sources */,
 				F1F030ED2A8B69EB00C8EAA2 /* UrlSessionViewModel.swift in Sources */,
+				F1E068592A94E535001B6393 /* CALayer.swift in Sources */,
 				F1F030E82A8B68F300C8EAA2 /* Way.swift in Sources */,
 				F1CFBF5B2A8CC02F008A185C /* News.swift in Sources */,
 				F1A8F7302A8B5F3F0041E2A8 /* ViewController.swift in Sources */,
