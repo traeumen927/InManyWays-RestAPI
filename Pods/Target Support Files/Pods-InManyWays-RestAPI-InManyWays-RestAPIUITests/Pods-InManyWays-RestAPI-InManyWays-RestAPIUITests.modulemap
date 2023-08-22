@@ -1,0 +1,6 @@
+framework module Pods_InManyWays_RestAPI_InManyWays_RestAPIUITests {
+  umbrella header "Pods-InManyWays-RestAPI-InManyWays-RestAPIUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
