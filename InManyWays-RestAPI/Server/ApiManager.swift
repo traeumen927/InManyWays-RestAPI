@@ -64,4 +64,21 @@ struct ApiManager {
             return Disposables.create { }
         }
     }
+    
+    func requestRx<T: Codable>(path: URL) -> Single<T> {
+        return Observable.just(path)
+                    .flatMap { url -> Observable<Data> in
+                        return URLSession.shared.rx.data(request: URLRequest(url: url))
+                    }
+                    .flatMap { data -> Observable<T> in
+                        do {
+                            let decoder = JSONDecoder()
+                            let result = try decoder.decode(T.self, from: data)
+                            return Observable.just(result)
+                        } catch {
+                            return Observable.error(error)
+                        }
+                    }
+                    .asSingle()
+    }
 }

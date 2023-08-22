@@ -21,7 +21,7 @@ class NewsService {
             return ApiManager.shared.requestAF(path: Server.url())
         
         case .RxSwift:
-            return ApiManager.shared.requestAF(path: Server.url())
+            return ApiManager.shared.requestRx(path: Server.url())
         }
     }
 }
