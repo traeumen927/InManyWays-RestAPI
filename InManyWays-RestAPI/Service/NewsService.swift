@@ -15,7 +15,7 @@ class NewsService {
         switch type {
         
         case .UrlSession:
-            return ApiManager.shared.requestAF(path: Server.url())
+            return ApiManager.shared.requestUS(path: Server.url())
             
         case .Alamofire:
             return ApiManager.shared.requestAF(path: Server.url())
