@@ -18,6 +18,7 @@ class NewsCell: UITableViewCell {
         let v = UIView()
         v.backgroundColor = .white
         v.layer.cornerRadius = 24.0
+        v.layer.applySketchShadow(color: .black, alpha: 0.3, x: 0, y: 0, blur: 13, spread: 0)
         return v
     }()
     
