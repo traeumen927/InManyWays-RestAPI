@@ -11,6 +11,7 @@ target 'InManyWays-RestAPI' do
   pod 'Alamofire'
   pod 'SnapKit'
   pod 'Kingfisher'
+  pod 'Moya/RxSwift'
 
   target 'InManyWays-RestAPITests' do
     inherit! :search_paths
