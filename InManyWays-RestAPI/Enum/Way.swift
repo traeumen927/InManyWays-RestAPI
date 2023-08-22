@@ -11,6 +11,7 @@ enum Way: String, CaseIterable {
     case UrlSession
     case Alamofire
     case RxSwift
+    case Moya
 }
 
 extension Way {
@@ -23,6 +24,8 @@ extension Way {
                 return "Alamofire"
             case .RxSwift:
                 return "RxSwift"
+            case .Moya:
+                return "Moya"
             }
         }
     }

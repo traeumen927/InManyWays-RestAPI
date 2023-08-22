@@ -22,6 +22,9 @@ class NewsService {
         
         case .RxSwift:
             return ApiManager.shared.requestRx(path: Server.url())
+            
+        case .Moya:
+            return ApiManager.shared.requestMoya()
         }
     }
 }

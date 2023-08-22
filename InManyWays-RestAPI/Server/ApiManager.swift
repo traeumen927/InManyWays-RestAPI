@@ -8,13 +8,19 @@
 import Foundation
 import RxSwift
 import Alamofire
+import Moya
 
 struct ApiManager {
     
     static let shared = ApiManager()
     
+    // MARK: News API Key
     let key = "5751ab390d944400bfe22050e8f954c6"
     
+    // MARK: for Moya
+    private let provider = MoyaProvider<API>()
+    
+    // MARK: request by UrlSession
     func requestUS<T: Codable>(path: URL) -> Single<T> {
         return Single.create { single in
             let task = URLSession.shared.dataTask(with: path) { data, response, error in
@@ -46,6 +52,7 @@ struct ApiManager {
     }
     
     
+    // MARK: request by Alamofire
     func requestAF<T: Codable>(path: URL) -> Single<T> {
         return Single<T>.create { single -> Disposable in
             AF.request(path).responseData { response in
@@ -65,6 +72,8 @@ struct ApiManager {
         }
     }
     
+    
+    // MARK: request by UrlSession + Rx
     func requestRx<T: Codable>(path: URL) -> Single<T> {
         return Observable.just(path)
                     .flatMap { url -> Observable<Data> in
@@ -80,5 +89,51 @@ struct ApiManager {
                         }
                     }
                     .asSingle()
+    }
+    
+    
+    // MARK: request Moya
+    func requestMoya() -> Single<News> {
+        return provider.rx.request(.fetchNews)
+                    .map(News.self)
+    }
+}
+
+
+// MARK: - Place for Moya Library
+
+enum API {
+    case fetchNews
+}
+
+extension API: TargetType {
+    var baseURL: URL {
+        return URL(string: "https://newsapi.org/v2")!
+    }
+
+    var path: String {
+        switch self {
+        case .fetchNews:
+            return "/everything"
+        }
+    }
+
+    var method: Moya.Method {
+        return .get
+    }
+
+    var task: Task {
+        let parameters: [String: Any] = [
+            "q": "apple",
+            "from": "2023-08-15",
+            "to": "2023-08-15",
+            "sortBy": "popularity",
+            "apiKey": ApiManager.shared.key
+        ]
+        return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
+    }
+
+    var headers: [String: String]? {
+        return nil
     }
 }
