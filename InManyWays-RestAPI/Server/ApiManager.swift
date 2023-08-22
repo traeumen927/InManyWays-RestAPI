@@ -15,7 +15,7 @@ struct ApiManager {
     
     let key = "5751ab390d944400bfe22050e8f954c6"
     
-    func request<T: Codable>(path: URL) -> Single<T> {
+    func requestAF<T: Codable>(path: URL) -> Single<T> {
         return Single<T>.create { single -> Disposable in
             AF.request(path).responseData { response in
                 switch response.result {

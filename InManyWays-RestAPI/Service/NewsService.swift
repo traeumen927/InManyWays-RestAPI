@@ -11,9 +11,17 @@ import RxSwift
 class NewsService {
     static let shared = NewsService()
     
-    private init() {}
-    
-    func getNews() -> Single<News> {
-        return ApiManager.shared.request(path: Server.url())
+    func getNews(type: Way) -> Single<News> {
+        switch type {
+        
+        case .UrlSession:
+            return ApiManager.shared.requestAF(path: Server.url())
+            
+        case .Alamofire:
+            return ApiManager.shared.requestAF(path: Server.url())
+        
+        case .RxSwift:
+            return ApiManager.shared.requestAF(path: Server.url())
+        }
     }
 }

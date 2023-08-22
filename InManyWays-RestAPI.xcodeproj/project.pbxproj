@@ -25,14 +25,12 @@
 		F1CFBF5D2A8CC18A008A185C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CFBF5C2A8CC18A008A185C /* WebService.swift */; };
 		F1DC07DC2A93A416003C2BAF /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DC07DB2A93A416003C2BAF /* NewsCell.swift */; };
 		F1E068592A94E535001B6393 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E068582A94E535001B6393 /* CALayer.swift */; };
+		F1E0685B2A94E7B8001B6393 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0685A2A94E7B8001B6393 /* NewsViewModel.swift */; };
 		F1F030DC2A8B60CF00C8EAA2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F030DB2A8B60CF00C8EAA2 /* ViewModel.swift */; };
 		F1F030E42A8B616200C8EAA2 /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F030E32A8B616200C8EAA2 /* UIResponder.swift */; };
 		F1F030E62A8B617500C8EAA2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F030E52A8B617500C8EAA2 /* UIColor.swift */; };
 		F1F030E82A8B68F300C8EAA2 /* Way.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F030E72A8B68F300C8EAA2 /* Way.swift */; };
 		F1F030EB2A8B69BA00C8EAA2 /* NewsViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F030EA2A8B69BA00C8EAA2 /* NewsViewModelType.swift */; };
-		F1F030ED2A8B69EB00C8EAA2 /* UrlSessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F030EC2A8B69EB00C8EAA2 /* UrlSessionViewModel.swift */; };
-		F1F030EF2A8B6A0000C8EAA2 /* AlamoFireViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F030EE2A8B6A0000C8EAA2 /* AlamoFireViewModel.swift */; };
-		F1F030F12A8B6A0100C8EAA2 /* RxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F030F02A8B6A0100C8EAA2 /* RxViewModel.swift */; };
 		F1F030F32A8BA6E300C8EAA2 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F030F22A8BA6E300C8EAA2 /* NewsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,14 +79,12 @@
 		F1CFBF5C2A8CC18A008A185C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		F1DC07DB2A93A416003C2BAF /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		F1E068582A94E535001B6393 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		F1E0685A2A94E7B8001B6393 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		F1F030DB2A8B60CF00C8EAA2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		F1F030E32A8B616200C8EAA2 /* UIResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponder.swift; sourceTree = "<group>"; };
 		F1F030E52A8B617500C8EAA2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		F1F030E72A8B68F300C8EAA2 /* Way.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Way.swift; sourceTree = "<group>"; };
 		F1F030EA2A8B69BA00C8EAA2 /* NewsViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModelType.swift; sourceTree = "<group>"; };
-		F1F030EC2A8B69EB00C8EAA2 /* UrlSessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionViewModel.swift; sourceTree = "<group>"; };
-		F1F030EE2A8B6A0000C8EAA2 /* AlamoFireViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFireViewModel.swift; sourceTree = "<group>"; };
-		F1F030F02A8B6A0100C8EAA2 /* RxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewModel.swift; sourceTree = "<group>"; };
 		F1F030F22A8BA6E300C8EAA2 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		FB4E2F2AF77B6186DF337EB2 /* Pods-InManyWays-RestAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InManyWays-RestAPI.debug.xcconfig"; path = "Target Support Files/Pods-InManyWays-RestAPI/Pods-InManyWays-RestAPI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,9 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				F1F030DB2A8B60CF00C8EAA2 /* ViewModel.swift */,
-				F1F030EC2A8B69EB00C8EAA2 /* UrlSessionViewModel.swift */,
-				F1F030EE2A8B6A0000C8EAA2 /* AlamoFireViewModel.swift */,
-				F1F030F02A8B6A0100C8EAA2 /* RxViewModel.swift */,
+				F1E0685A2A94E7B8001B6393 /* NewsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -532,11 +526,11 @@
 			files = (
 				F1CFBF592A8CBF29008A185C /* Server.swift in Sources */,
 				F1C6FF532A9245AC0044ADB2 /* NewsService.swift in Sources */,
-				F1F030ED2A8B69EB00C8EAA2 /* UrlSessionViewModel.swift in Sources */,
 				F1E068592A94E535001B6393 /* CALayer.swift in Sources */,
 				F1F030E82A8B68F300C8EAA2 /* Way.swift in Sources */,
 				F1CFBF5B2A8CC02F008A185C /* News.swift in Sources */,
 				F1A8F7302A8B5F3F0041E2A8 /* ViewController.swift in Sources */,
+				F1E0685B2A94E7B8001B6393 /* NewsViewModel.swift in Sources */,
 				F1F030F32A8BA6E300C8EAA2 /* NewsViewController.swift in Sources */,
 				F1F030E62A8B617500C8EAA2 /* UIColor.swift in Sources */,
 				F1A8F72C2A8B5F3F0041E2A8 /* AppDelegate.swift in Sources */,
@@ -545,8 +539,6 @@
 				F1F030EB2A8B69BA00C8EAA2 /* NewsViewModelType.swift in Sources */,
 				F1CFBF5D2A8CC18A008A185C /* WebService.swift in Sources */,
 				F1F030DC2A8B60CF00C8EAA2 /* ViewModel.swift in Sources */,
-				F1F030EF2A8B6A0000C8EAA2 /* AlamoFireViewModel.swift in Sources */,
-				F1F030F12A8B6A0100C8EAA2 /* RxViewModel.swift in Sources */,
 				F1F030E42A8B616200C8EAA2 /* UIResponder.swift in Sources */,
 				F1A8F72E2A8B5F3F0041E2A8 /* SceneDelegate.swift in Sources */,
 			);
