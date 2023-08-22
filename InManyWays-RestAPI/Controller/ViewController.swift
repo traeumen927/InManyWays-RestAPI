@@ -69,7 +69,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let way = viewModel.WayAt(indexPath.row)
-        self.navigationController?.pushViewController(NewsViewController(viewModel: way.viewModel), animated: true)
+        let vc = NewsViewController(viewModel: way.viewModel)
+        vc.title = way.rawValue
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

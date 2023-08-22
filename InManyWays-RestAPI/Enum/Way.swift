@@ -8,34 +8,35 @@
 import Foundation
 
 enum Way: String, CaseIterable {
-    case UrlSession
+//    case UrlSession
     case Alamofire
-    case RxSwift
+//    case RxSwift
 }
 
 extension Way {
     var description: String {
         get {
             switch (self) {
-            case .UrlSession:
-                return "UrlSession"
+//            case .UrlSession:
+//                return "UrlSession"
             case .Alamofire:
                 return "Alamofire"
-            case .RxSwift:
-                return "RxSwift"
+//            case .RxSwift:
+//                return "RxSwift"
             }
         }
     }
+
     
-    var viewModel: viewModelType {
+    var viewModel: any NewsViewModelType {
         get {
             switch (self) {
-            case .UrlSession:
-                return UrlSessionViewModel()
+//            case .UrlSession:
+//                return UrlSessionViewModel()
             case .Alamofire:
                 return AlamoFireViewModel()
-            case .RxSwift:
-                return RxViewModel()
+//            case .RxSwift:
+//                return RxViewModel()
             }
         }
     }
